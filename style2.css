@@ -574,3 +574,69 @@ transform: translateY(-5px) scale(1.1);
         padding-left: 10px;
     }
 }
+@media only screen and (max-width: 800px){
+    /* CSS rules for landscape mode */
+    #about{
+        background-image: url(images/pexels-ella-olsson-1640774.jpg) ;
+    }
+    .restaurant-link{
+        font-size: 10px;
+    }
+    #about img{
+        width: 20%;
+        height: 20%;
+    }
+    html {
+        font-size:20%;
+        }
+    .content h1{
+        font-size: 50px;
+    }
+    .content h2{
+        font-size: 20px;
+    }
+    .main-content h2{
+        font-size: 15px;
+    }
+    .main-content p{
+        font-size: 10px;
+    }
+    .section-title{
+        font-size: 25px;
+    }
+    .contact-icon{
+        font-size: 18px;
+    }
+    .contact-handle{
+        font-size: 9px;
+    }
+    body {
+        font-family: var(--font-family);
+        font-size: var(--font-size-sm);
+        color: var(--light-color-alt);
+        background-color: var(--primary-background-color);
+        letter-spacing: 1px;
+        transition: background-color .25s, color .25s;
+        }
+     #header {
+            height: 50px; /* Adjust the height as desired */
+          }
+    .logo{
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    .slideshow-container {
+        width: 50%;
+        height: 80%;
+       
+    } 
+    .restaurant-picture{
+        width:50%;
+        padding-top: 50px;
+        height: 80%;
+    }
+    .main-content{
+        padding-top: 40px;
+        padding-left: 10px;
+    }
+  }
