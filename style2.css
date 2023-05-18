@@ -530,6 +530,11 @@ transform: translateY(-5px) scale(1.1);
     .content h2{
         font-size: 25px;
     }
+     .restaurant-picture{
+        width:50%;
+         height: 50%;
+        padding-top: 50px;
+    }
     .main-content h2{
         font-size: 20px;
     }
@@ -565,11 +570,6 @@ transform: translateY(-5px) scale(1.1);
         height: 210px;
        
     } 
-    .restaurant-picture{
-        width:50%;
-        padding-top: 50px;
-        height: 50%;
-    }
     .main-content{
         padding-left: 10px;
     }
