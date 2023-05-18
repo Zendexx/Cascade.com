@@ -559,5 +559,10 @@ transform: translateY(-5px) scale(1.1);
     .logo{
         font-size: 15px;
         padding-top: 10px;
+    }
+    .slideshow-container {
+        width: 50%;
+        height: 210px;
+       
     }   
 }
