@@ -338,7 +338,7 @@ flex-basis: 50%;
 display: flex;
 flex-direction: column;
 justify-content: center;
-padding: 0 20px;
+
 }
 
 .main-content h2 {
@@ -354,7 +354,7 @@ margin-bottom: 40px;
 
 .restaurant-link {
 display: inline-block;
-padding: 10px 0;
+
 }
 
 .restaurant-link a {
@@ -511,7 +511,7 @@ transform: translateY(-5px) scale(1.1);
 /* ---------CSS FOR SMALL SCREEN ------------------------------------- */
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {
-   #about{
+    #about{
         background-image: url(images/pexels-ella-olsson-1640774.jpg) ;
     }
     
@@ -533,6 +533,9 @@ transform: translateY(-5px) scale(1.1);
     }
     .main-content p{
         font-size: 10.5px;
+    }
+    .restaurant-link{
+        font-size: 8.5px;
     }
     .section-title{
         font-size: 25px;
