@@ -559,7 +559,7 @@ transform: translateY(-5px) scale(1.1);
         font-size: 25px;
     }
     .Condact-segtion{
-        padding-top: 60px;
+        padding-top: 35px;
     }
     .contact-icon{
         font-size: 18px;
@@ -587,17 +587,13 @@ transform: translateY(-5px) scale(1.1);
         height: 210px;
        
     } 
-    /* .restaurant-picture{
-        width:50%;
-        padding-top: 50px;
-        height: 50%;
-    } */
     .main-content{
         padding-left: 10px;
     }
 }
 
 @media only screen and (min-width: 768px){
+    /* ---For Tablets--------------------------------------- */
     #about{
         background-image: url(images/pexels-ella-olsson-1640774.jpg) ;
     }
@@ -805,6 +801,7 @@ transform: translateY(-5px) scale(1.1);
 }
 
 @media only screen and (min-width: 1200px){
+    /* ----------------------------Computer----------------------------- */
     #about{
         background-image: url(images/pexels-ella-olsson-1640774.jpg) ;
     }
@@ -813,6 +810,9 @@ transform: translateY(-5px) scale(1.1);
     }
     .Condact-segtion{
         padding-top: 60px;
+    }
+    .list{
+        font-size: 19px;
     }
     #menu {
         /* Existing CSS properties */
