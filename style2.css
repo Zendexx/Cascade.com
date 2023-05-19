@@ -516,7 +516,7 @@ transform: translateY(-5px) scale(1.1);
 /* Responsive Styles */
 /* ------------------------ For mobile phone--------------------------------------- */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (orientation: portrait) {
     #about{
         background-image: url(images/pexels-ella-olsson-1640774.jpg) ;
     }
@@ -534,7 +534,7 @@ transform: translateY(-5px) scale(1.1);
         font-size: 70px;
     }
     .content h2{
-        font-size: 25px;
+        font-size: 22px;
     }
     .main-content h2{
         font-size: 20px;
@@ -858,3 +858,74 @@ transform: translateY(-5px) scale(1.1);
         padding-left: 10px;
     }
 }
+
+@media screen and (min-width: 1440px) and (min-height: 3216px) {
+    /* CSS rules specific to OnePlus 10 Pro */
+    /* Add your styles here */
+    #about{
+        background-image: url(images/pexels-ella-olsson-1640774.jpg) ;
+    }
+    .restaurant-link{
+        font-size: 16px;
+    }
+    .Condact-segtion{
+        padding-top: 60px;
+    }
+    #about img{
+        width: 20%;
+        height: 20%;
+    }
+    html {
+        font-size:20%;
+        }
+    .content h1{
+        font-size: 80px;
+    }
+    .content h2{
+        font-size: 30px;
+    }
+    .main-content h2{
+        font-size: 28px;
+    }
+    .main-content p{
+        font-size: 19px;
+    }
+    .section-title{
+        font-size: 30px;
+    }
+    .contact-icon{
+        font-size: 25px;
+    }
+    .contact-handle{
+        font-size: 20px;
+    }
+    body {
+        font-family: var(--font-family);
+        font-size: var(--font-size-sm);
+        color: var(--light-color-alt);
+        background-color: var(--primary-background-color);
+        letter-spacing: 1px;
+        transition: background-color .25s, color .25s;
+        }
+     #header {
+            height: 70px; /* Adjust the height as desired */
+          }
+    .logo{
+        font-size: 22px;
+        padding-top: 12px;
+    }
+    .slideshow-container {
+        width: 50%;
+        height: 85%;
+       
+    } 
+    .restaurant-picture{
+        width:50%;
+        padding-top: 50px;
+        height: 85%;
+    }
+    .main-content{
+        padding-left: 10px;
+    }
+  }
+  
