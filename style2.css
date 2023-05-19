@@ -899,6 +899,10 @@ transform: translateY(-5px) scale(1.1);
      .Condact-segtion{
          padding-top: 43%;
      }
+     .list{
+        font-size: 12px;
+     }
+     
      #about img{
          width: 20%;
          height: 20%;
