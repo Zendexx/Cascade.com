@@ -68,8 +68,9 @@ background-color: transparent;
 }
 
 i {
-font-size: 25px;
-padding-left: 10px;
+font-size: 28px;
+padding-left: 45px;
+padding: auto;
 }
 
 /* Theme color change */
@@ -150,6 +151,10 @@ align-items: center;
 gap: var(--gap);
 font-size: 10.5px;
 }
+
+.list-right .btn {
+    margin-left: 10px;
+  }
 
 .menu > .list {
 flex-direction: column;
