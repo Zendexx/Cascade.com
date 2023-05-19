@@ -136,20 +136,22 @@ font-family: 'Dancing Script', cursive;
 position: absolute;
 top: 8.5rem;
 right: 1.5rem;
-width: 23rem;
+width: 50rem;
 padding: 1.5rem;
 background-color: var(--secondary-background-color);
 opacity: 0;
 transform: scale(0);
 transition: opacity .25s ease-in;
 border-radius: 15px;
+
 }
+
 
 .list {
 display: flex;
 align-items: center;
 gap: var(--gap);
-font-size: 10.5px;
+font-size: 15px;
 }
 
 .list-right .btn {
@@ -817,6 +819,14 @@ transform: translateY(-5px) scale(1.1);
     .Condact-segtion{
         padding-top: 60px;
     }
+    #menu {
+        /* Existing CSS properties */
+      
+        position: absolute;
+        top: 100%; /* Adjust this value as needed */
+        right: 0; /* Adjust this value as needed */
+        transform: translateX(-220%);
+      }
     #about img{
         width: 20%;
         height: 20%;
