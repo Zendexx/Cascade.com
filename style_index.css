@@ -449,30 +449,45 @@ body.light-theme{
 }
 
 /* MEDIA QUARRIES FOR SMARTPHONES TABLETS AND COMPUTERS ----------------------- */
-/* ---------CSS FOR SMALL SCREEN ------------------------------------------------------------ */
-/* Responsive Styles */
-/* ------------------------ For mobile phone--------------------------------------- */
+
+@media (max-width: 767px) {
+  #about {
+    background-attachment: scroll;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .menu{
+      position: static;
+      width: initial;
+      padding: initial;
+      background-color: transparent;
+      opacity: 1;
+      transform: scale(1);
+  }
+
+  .menu > .list{
+      flex-direction: row;
+  }
+}
 
 @media only screen and (max-width: 600px) and (orientation: portrait) {
-  #about{
-      background-image: url(images/pexels-ella-olsson-1640774.jpg) ;
-  }
+  
   .restaurant-link{
-      font-size: 12px;
+      font-size: 10px;
   }
   #about img{
       width: 20%;
       height: 20%;
   }
-  html {
-      font-size:20%;
-      }
   .content h1{
       font-size: 70px;
   }
   .content h2{
       font-size: 22px;
   }
+
   .main-content h2{
       font-size: 20px;
   }
@@ -501,394 +516,118 @@ body.light-theme{
         }
   .logo{
       font-size: 15px;
-      padding-top: 10px;
   }
   .slideshow-container {
       width: 50%;
-      height: 210px;
+      height: 45%;
      
   } 
   .main-content{
       padding-left: 10px;
+  }
+
+  .restaurant-picture{
+    width: 50%;
   }
 }
 
-@media only screen and (min-width: 768px){
-  /* ---For Tablets--------------------------------------- */
-  #about{
-      background-image: url(images/pexels-ella-olsson-1640774.jpg) ;
-  }
-  .restaurant-link{
-      font-size: 20px;
-  }
-  #about img{
-      width: 20%;
-      height: 20%;
-  }
-  html {
-      font-size:20%;
-      }
-  .content h1{
-      font-size: 100px;
-  }
-  .content h2{
-      font-size: 30px;
-  }
-  .main-content h2{
-      font-size: 30px;
-  }
-  .main-content p{
-      font-size: 21px;
-  }
-  .section-title{
-      font-size: 35px;
-  }
-  .list{
-      font-size: 20px;
-  }
-  #menu {
-      /* Existing CSS properties */
-    
-      position: absolute;
-      top: 100%; /* Adjust this value as needed */
-      right: 0; /* Adjust this value as needed */
-      transform: translateX(-35%);
-    }
-  .Condact-segtion{
-      padding-top: 60px;
-  }
-  .contact-icon{
-      font-size: 22px;
-  }
-  .contact-handle{
-      font-size: 22px;
-  }
-  body {
-      font-family: var(--font-family);
-      font-size: var(--font-size-sm);
-      color: var(--light-color-alt);
-      background-color: var(--primary-background-color);
-      letter-spacing: 1px;
-      transition: background-color .25s, color .25s;
-      }
-   #header {
-          height: 100px; /* Adjust the height as desired */
-        }
-  .logo{
-      font-size: 25px;
-      padding-top: 20px;
-  }
-  .slideshow-container {
-      width: 50%;
-      height: 50%;
-     
-  } 
-  /* .restaurant-picture{
-      width:50%;
-      padding-top: 40px;
-      height: 60%;
-  } */
-  .main-content{
-      padding-top: 40px;
-      padding-left: 10px;
-  }
-}
-@media only screen and (min-width: 200px) and (max-width: 1000px) and (max-height: 600px) and (orientation: landscape) {
- /* -------For phone landscape------------------------------ */
-  #about{
-      background-image: url(images/pexels-ella-olsson-1640774.jpg) ;
-      width: 100%;
-  }
-  .restaurant-link{
-      font-size: 12px;
-  }
-  .Condact-segtion{
-      padding-top: 15%;
-  }
-  #about img{
-      width: 20%;
-      height: 20%;
-  }
-  html {
-      font-size:20%;
-      }
-  .content h1{
-      font-size: 40px;
-  }
-  .content h2{
-      font-size: 20px;
-  }
-  .main-content h2{
-      font-size: 20px;
-  }
-  .main-content p{
-      font-size: 12px;
-  }
-  .section-title{
-      font-size: 25px;
-  }
-  .contact-icon{
-      font-size: 15px;
-  }
-  .contact-handle{
-      font-size: 15px;
-  }
-  body {
-      font-family: var(--font-family);
-      font-size: var(--font-size-sm);
-      color: var(--light-color-alt);
-      background-color: var(--primary-background-color);
-      letter-spacing: 1px;
-      transition: background-color .25s, color .25s;
-      }
-  #header {
-          height: 40px; /* Adjust the height as desired */
-        }
-  .logo{
-      font-size: 15px;
-      padding-top: 5px;
-  }
-  .slideshow-container {
-      width: 40%;
-      height: 80%;
-     
-  } 
-  /* .restaurant-picture{
-      width: 40%;
-      padding-top: 40px;
-      height: 80%;
-  } */
-  .main-content{
-      padding-top: 20px;
-      padding-left: 10px;
-  }
-}
 
-@media only screen and (min-width: 1000px) and (orientation: landscape) and (min-height: 600px){
-  #about{
-      background-image: url(images/pexels-ella-olsson-1640774.jpg) ;
-  }
-  .restaurant-link{
-      font-size: 16px;
-  }
-  .Condact-segtion{
-      padding-top: 60px;
-  }
-  #about img{
-      width: 20%;
-      height: 20%;
-  }
-  html {
-      font-size:20%;
-      }
-  .content h1{
-      font-size: 75px;
-  }
-  .content h2{
-      font-size: 30px;
-  }
-  .main-content h2{
-      font-size: 27px;
-  }
-  .main-content p{
-      font-size: 18px;
-  }
-  .section-title{
-      font-size: 30px;
-  }
-  .contact-icon{
-      font-size: 25px;
-  }
-  .contact-handle{
-      font-size: 16px;
-  }
-  body {
-      font-family: var(--font-family);
-      font-size: var(--font-size-sm);
-      color: var(--light-color-alt);
-      background-color: var(--primary-background-color);
-      letter-spacing: 1px;
-      transition: background-color .25s, color .25s;
-      }
-   #header {
-          height: 70px; /* Adjust the height as desired */
-        }
-  .logo{
-      font-size: 22px;
-      padding-top: 12px;
-  }
+@media only screen and (max-width: 1140px) and (min-width: 700px){
   .slideshow-container {
-      width: 50%;
-      height: 85%;
-     
-  } 
-  /* .restaurant-picture{
-      width:50%;
-      padding-top: 50px;
-      height: 85%;
-  } */
-  .main-content{
-      padding-left: 10px;
-  }
-}
-
-@media only screen and (min-width: 1200px){
-  /* ----------------------------Computer----------------------------- */
-  #about{
-      background-image: url(images/pexels-ella-olsson-1640774.jpg) ;
-  }
-  .restaurant-link{
-      font-size: 16px;
-  }
-  .Condact-segtion{
-      padding-top: 60px;
-  }
-  .list{
-      font-size: 19px;
-  }
-  #menu {
-      /* Existing CSS properties */
-    
-      position: absolute;
-      top: 100%; /* Adjust this value as needed */
-      right: 0; /* Adjust this value as needed */
-      transform: translateX(-220%);
-    }
-  #about img{
-      width: 20%;
-      height: 20%;
-  }
-  html {
-      font-size:20%;
-      }
-  .content h1{
-      font-size: 80px;
-  }
-  .content h2{
-      font-size: 30px;
-  }
-  .main-content h2{
-      font-size: 28px;
-  }
-  .main-content p{
-      font-size: 19px;
-  }
-  .section-title{
-      font-size: 30px;
-  }
-  .contact-icon{
-      font-size: 25px;
-  }
-  .contact-handle{
-      font-size: 20px;
-  }
-  body {
-      font-family: var(--font-family);
-      font-size: var(--font-size-sm);
-      color: var(--light-color-alt);
-      background-color: var(--primary-background-color);
-      letter-spacing: 1px;
-      transition: background-color .25s, color .25s;
-      }
-   #header {
-          height: 70px; /* Adjust the height as desired */
-        }
-  .logo{
-      font-size: 22px;
-      padding-top: 12px;
-  }
-  .slideshow-container {
-      width: 50%;
-      height: 85%;
-     
-  } 
-  /* .restaurant-picture{
-      width:50%;
-      padding-top: 50px;
-      height: 85%;
-  } */
-  .main-content{
-      padding-left: 10px;
-  }
-}
-@media only screen and (min-width: 200px) and (max-height: 300px) and (orientation: landscape) {
-  /* -------For phone landscape------------------------------ */
-   #about{
-       background-image: url(images/pexels-ella-olsson-1640774.jpg) ;
-       width: 100%;
-   }
-   .restaurant-section{
-      padding-top: 80px;
-   }
-   .restaurant-link{
-       font-size: 15px;
-   }
-   .Condact-segtion{
-       padding-top: 43%;
-   }
-   .list{
-      font-size: 12px;
-   }
+    width: 50%;
+    height: 60%;
    
-   #about img{
-       width: 20%;
-       height: 20%;
-   }
-   html {
-       font-size:20%;
-       }
-   .content h1{
-       font-size: 38px;
-   }
-   .content h2{
-       font-size: 18px;
-   }
-   .main-content h2{
-       font-size: 22px;
-   }
-   .main-content p{
-       font-size: 14px;
-   }
-   .section-title{
-       font-size: 25px;
-   }
-   .contact-icon{
-       font-size: 15px;
-   }
-   .contact-handle{
-       font-size: 15px;
-   }
-   body {
-       font-family: var(--font-family);
-       font-size: var(--font-size-sm);
-       color: var(--light-color-alt);
-       background-color: var(--primary-background-color);
-       letter-spacing: 1px;
-       transition: background-color .25s, color .25s;
-       }
-   #header {
-           height: 40px; /* Adjust the height as desired */
-         }
-   .logo{
-       font-size: 15px;
-       padding-top: 5px;
-   }
-   .stoopid{
-          height: 120px !important;
-          margin-top: -50px !important; /* Adjust the value as needed */
-          background-size: cover;
-   }
-   .slideshow-container {
-       width: 40%;
-       height: 120%;
-      
-   } 
-   /* .restaurant-picture{
-       width: 50%;
-       height: 250%;
-   } */
-   .main-content{
-       padding-top: 20px;
-       padding-left: 10px;
-   }
+} 
+
+ .main-content h2{
+  font-size: 30px;
+ }
+
+ .main-content p{
+  font-size: 15px;
+ }
 }
+
+@media only screen and (max-width: 699px) and (min-width: 601px){
+  .slideshow-container {
+    width: 50%;
+    height: 55%;
+   
+}
+
+.main-content h2{
+  font-size: 30px;
+ }
+
+ .main-content p{
+  font-size: 15px;
+ }
+}
+
+@media only screen and (max-width: 450px) and (min-width: 350px) {
+
+ .main-content h2{
+  font-size: 13px;
+ }
+
+ .main-content p{
+  font-size: 10px;
+ }
+
+ .slideshow-container {
+  width: 50%;
+  height: 38%;
+ 
+}
+
+}
+
+@media only screen and (min-height: 350px) and (max-height: 450px) and (orientation: landscape) {
+  .content h2 {
+    font-size: 25px;
+  }
+  .events {
+    height: 100%;
+    width: 100%;
+  }
+
+  .restaurant-section{
+    height: 100%;
+    width: 100%
+  }
+}
+
+@media only screen and (max-width: 349px) and (min-width: 279px) {
+  #about{
+    width: 100%;
+  }
+  .content h2{
+    font-size: 25px;
+  }
+
+  .main-content h2{
+   font-size: 13px;
+  }
+ 
+  .main-content p{
+   font-size: 8px;
+  }
+ 
+  .slideshow-container {
+   width: 50%;
+   height: 38%;
+  
+ }
+ 
+ }
+ 
+ @media only screen and (min-height: 250px) and (max-height: 349px) and (orientation: landscape) {
+   .events {
+     height: 100%;
+   }
+ 
+   .restaurant-section{
+     height: 100%;
+   }
+ }
+ 
