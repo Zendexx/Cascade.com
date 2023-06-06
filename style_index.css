@@ -448,8 +448,7 @@ body.light-theme{
   margin-top: 5px;
 }
 
-/* MEDIA QUARRIES FOR SMARTPHONES TABLETS AND COMPUTERS ----------------------- */
-
+/* ------------------Media Quarries for smartphones, tablets and exceptions--------------------- */
 @media (max-width: 767px) {
   #about {
     background-attachment: scroll;
@@ -471,11 +470,10 @@ body.light-theme{
       flex-direction: row;
   }
 }
-
 @media only screen and (max-width: 600px) and (orientation: portrait) {
   
   .restaurant-link{
-      font-size: 10px;
+    font-size: 10px;
   }
   #about img{
       width: 20%;
@@ -503,15 +501,7 @@ body.light-theme{
   .contact-handle{
       font-size: 9px;
   }
-  body {
-      font-family: var(--font-family);
-      font-size: var(--font-size-sm);
-      color: var(--light-color-alt);
-      background-color: var(--primary-background-color);
-      letter-spacing: 1px;
-      transition: background-color .25s, color .25s;
-      }
-   #header {
+  #header {
           height: 50px; /* Adjust the height as desired */
         }
   .logo{
@@ -519,8 +509,7 @@ body.light-theme{
   }
   .slideshow-container {
       width: 50%;
-      height: 45%;
-     
+      height: 55%;
   } 
   .main-content{
       padding-left: 10px;
@@ -530,8 +519,6 @@ body.light-theme{
     width: 50%;
   }
 }
-
-
 @media only screen and (max-width: 1140px) and (min-width: 700px){
   .slideshow-container {
     width: 50%;
@@ -630,4 +617,3 @@ body.light-theme{
      height: 100%;
    }
  }
- 
