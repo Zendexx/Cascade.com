@@ -393,7 +393,9 @@ body.light-theme{
   border-radius: 15px;
 }
 
-
+.condact_segtion{
+  padding-top: 2%;
+ }
 .contact-section {
   position: relative;
   background-image: url('https://images.pexels.com/photos/1542252/pexels-photo-1542252.jpeg?cs=srgb&dl=pexels-kerde-severin-1542252.jpg&fm=jpg&w=1280&h=853');
@@ -512,7 +514,7 @@ body.light-theme{
         }
      #header {
             height: 50px; /* Adjust the height as desired */
-          }
+    }
     .logo{
         font-size: 15px;
     }
@@ -544,8 +546,18 @@ body.light-theme{
     padding-top: 10%;
    }
    .Restaurant_segtion{
-    padding-top: 20%;
+    padding-top: 15%;
    }
+   .logo{
+    font-size: 17px;
+   }
+  #header {
+    height: 50px; /* Adjust the height as desired */
+   }
+   .slideshow-container {
+    width: 50%;
+    height: 70% !important;
+   } 
   }
   @media only screen and (max-width: 1140px) and (min-width: 700px){
     .slideshow-container {
