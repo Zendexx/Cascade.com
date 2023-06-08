@@ -537,7 +537,7 @@ body.light-theme{
 /* Mobile phones in portrait orientation (e.g., iPhone 6/7/8, Galaxy S9) */
 @media (min-width: 321px) and (max-width: 480px) {
   /* CSS rules for mobile phones in portrait orientation */
-    .restaurant-link{
+  .restaurant-link{
       font-size: 11px;
   }
   #about img{
@@ -645,7 +645,7 @@ body.light-theme{
  }
  .slideshow-container {
   width: 50%;
-  height: 70% !important;
+  height: 60% !important;
  } 
  .contact-icons {
   flex-direction: column;
@@ -679,14 +679,78 @@ body.light-theme{
 /* Small tablets (e.g., iPad Mini) */
 @media (min-width: 768px) and (max-width: 1023px) {
   /* CSS rules for small tablets */
+  .slideshow-container {
+    width: 50%;
+    height: 60% !important;
+   } 
+   .content h2{
+    font-size: 30px;
+  }
 }
 
 /* Medium tablets (e.g., iPad Air, iPad Pro 10.5") */
 @media (min-width: 1024px) and (max-width: 1365px) {
   /* CSS rules for medium tablets */
+  .restaurant-link{
+    font-size: 25px;
+  }
+  .content h1{
+      font-size: 70px;
+  }
+  .content h2{
+      font-size: 35px;
+  }
+  .main-content h2{
+      font-size: 30px;
+  }
+  .main-content p{
+      font-size: 20px;
+  }
+  .Restaurant_segtion{
+    padding-top: 8%;
+  }
+  .condact_segtion{
+    padding-top: 8%;
+  }
+  .section-title{
+      font-size: 25px;
+  }
+  .contact-icon{
+      font-size: 18px;
+  }
+  .contact-handle{
+      font-size: 9px;
+  }
+  .logo{
+      font-size: 15px;
+  }
+  .slideshow-container {
+      width: 50%;
+      height: 60%;
+    
+  } 
+  .main-content{
+      padding-left: 10px;
+  }
+
+  .restaurant-picture{
+    width: 50%;
+  }
+
+  .contact-handle {
+    font-size: 18px;
+  }
 }
 
 /* Large tablets (e.g., iPad Pro 11", 12.9") */
 @media (min-width: 1366px) {
   /* CSS rules for large tablets */
+  .contact-handle {
+    font-size: 20px;
+  }
+  .slideshow-container {
+    width: 50%;
+    height: 90%;
+  
+} 
 }
