@@ -698,7 +698,7 @@ body.light-theme{
       font-size: 12px;
     }
   }
-  @media only screen and (device-width: 844px) and (device-height: 390px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)
+  @media only screen and (device-width: 844px) and (device-height: 390px) and (orientation: landscape)
     /* Your styles for iPhone 13 Pro in landscape mode */
    {
     .events {
