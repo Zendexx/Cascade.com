@@ -384,24 +384,11 @@ background-attachment: scroll;
     font-size: 14px;
     margin-top: 5px;
   }
+/* Media queries for mobile phones */
 
-/* Responsive Styles */
-@media screen and (min-width: 1024px) {
-    .menu{
-        position: static;
-        width: initial;
-        padding: initial;
-        background-color: transparent;
-        opacity: 1;
-        transform: scale(1);
-    }
-  
-    .menu > .list{
-        flex-direction: row;
-    }
-  }
-  
-  @media only screen and (max-width: 600px) and (orientation: portrait) {
+/* Small mobile phones (e.g., iPhone SE) */
+@media (max-width: 320px) {
+    /* CSS rules for small mobile phones */
     .contact-icon{
         font-size: 18px;
     }
@@ -430,7 +417,7 @@ background-attachment: scroll;
     
     .event-content {
       width: 60%;
-      font-size: 12px;
+      font-size: 10px;
       margin-top: 20px;
       padding-right: 30px;
   }
@@ -438,50 +425,230 @@ background-attachment: scroll;
    .events-title{
       font-size: 15px;
    }
-  
-  }
-  
-  @media only screen and (max-width: 380px) and (orientation: portrait){
-      .event-title {
-          margin-right: 20px;
-          font-size: 9px;
-      }
-        
-      .event-content {
-          font-size: 10px;
-          margin-top: 20px;
-          margin-right: 130px;
-      }
-  
-      .events-title{
-          font-size: 15px;
-       }
-  }
-  
-  @media only screen and (min-height: 350px) and (max-height: 450px) and (orientation: landscape) {
-    .slideshow-container{
-        height: 100%;
-        width: 100%;
-    } 
-    
-    .event-content p{
-          font-size: 13px;
-      }
+   .contact-icons {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  @media only screen and (min-height: 350px) and (max-height: 450px) and (orientation: landscape) {
-    .event-title h1 {
-      font-size: 15px;
-    }
-    .event-content p {
-    font-size: 10px;
+  .contact-icon {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    margin-right: 140px;
+    margin-bottom: 10px;
+    
+  }
+
+  .contact-icon .contact-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .contact-icon .contact-link i {
+    margin-right: 10px;
+  }
+  .contact-handle {
+    font-size: 12px;
+  }
+  .section-title {
+    font-size: 30px;
+  }
+}
+/* Mobile phones in portrait orientation (e.g., iPhone 6/7/8, Galaxy S9) */
+@media (min-width: 321px) and (max-width: 480px) {
+    /* CSS rules for mobile phones in portrait orientation */
+    .contact-icon{
+        font-size: 18px;
+    }
+    .contact-handle{
+        font-size: 9px;
+    }
+    body {
+        font-family: var(--font-family);
+        font-size: var(--font-size-sm);
+        color: var(--light-color-alt);
+        background-color: var(--primary-background-color);
+        letter-spacing: 1px;
+        transition: background-color .25s, color .25s;
+        }
+     #header {
+            height: 50px; /* Adjust the height as desired */
+          }
+    .logo{
+        font-size: 15px;
     }
   
-    .event-container{
-        align-items: center;
-        justify-content: center;
-    }
+    .event-title {
+      margin-right: 20px;
+      font-size: 10px;
   }
+    
+    .event-content {
+      width: 60%;
+      font-size: 11px;
+      margin-top: 20px;
+      padding-right: 30px;
+  }
+  
+   .events-title{
+      font-size: 15px;
+   }
+   .contact-icons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+  }
+
+  .contact-icon .contact-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .contact-icon .contact-link i {
+    margin-right: 10px;
+  }
+  .contact-handle {
+    font-size: 13px;
+  }
+}
+
+/* Mobile phones in landscape orientation (e.g., iPhone 6/7/8 Plus, Galaxy S9 Plus) */
+@media (min-width: 481px) and (max-width: 767px) {
+    /* CSS rules for mobile phones in landscape orientation */
+    .contact-icon{
+        font-size: 18px;
+    }
+    .contact-handle{
+        font-size: 9px;
+    }
+    body {
+        font-family: var(--font-family);
+        font-size: var(--font-size-sm);
+        color: var(--light-color-alt);
+        background-color: var(--primary-background-color);
+        letter-spacing: 1px;
+        transition: background-color .25s, color .25s;
+        }
+     #header {
+            height: 50px; /* Adjust the height as desired */
+          }
+    .logo{
+        font-size: 15px;
+    }
+  
+    .event-title {
+      margin-right: 20px;
+      font-size: 10px;
+  }
+    
+    .event-content {
+      width: 60%;
+      font-size: 10px;
+      margin-top: 20px;
+      padding-right: 30px;
+  }
+  
+   .events-title{
+      font-size: 15px;
+   }
+   .contact-icons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+  }
+
+  .contact-icon .contact-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .contact-icon .contact-link i {
+    margin-right: 10px;
+  }
+  .contact-handle {
+    font-size: 13px;
+  }
+}
+/* Media queries for tablets */
+
+/* Small tablets (e.g., iPad Mini) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* CSS rules for small tablets */
+    .contact-icon{
+        font-size: 18px;
+    }
+    .contact-handle{
+        font-size: 9px;
+    }
+    body {
+        font-family: var(--font-family);
+        font-size: var(--font-size-sm);
+        color: var(--light-color-alt);
+        background-color: var(--primary-background-color);
+        letter-spacing: 1px;
+        transition: background-color .25s, color .25s;
+        }
+     #header {
+            height: 50px; /* Adjust the height as desired */
+          }
+    .logo{
+        font-size: 15px;
+    }
+  
+    .event-title {
+      margin-right: 20px;
+      font-size: 10px;
+  }
+    
+    .event-content {
+      width: 60%;
+      font-size: 11px;
+      margin-top: 20px;
+      padding-right: 30px;
+  }
+  
+   .events-title{
+      font-size: 15px;
+   }
+   .contact-icons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+  }
+
+  .contact-icon .contact-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .contact-icon .contact-link i {
+    margin-right: 10px;
+  }
+  .contact-handle {
+    font-size: 14px;
+  }
+}
