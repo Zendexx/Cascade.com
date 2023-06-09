@@ -523,16 +523,16 @@ body.light-theme{
       width: 50%;
     }
   }
-  @media only screen and (min-height: 200px) and (max-height: 300px) and (orientation: landscape) {
+  /* Affects small screen heights oneplus 10, Galaxy s9+ */
+  @media only screen and (min-height: 200px) and (max-height: 320px) and (orientation: landscape) {
     .events {
       height: 100%;
     }
-  
     .restaurant-section{
       height: 100%;
     }
     .content h2{
-     font-size: 202px;
+     font-size: 22px;
    }
    .condact_segtion{
     padding-top: 10%;
@@ -543,14 +543,40 @@ body.light-theme{
    .logo{
     font-size: 17px;
    }
-  #header {
+   #header {
     height: 50px; /* Adjust the height as desired */
    }
    .slideshow-container {
     width: 50%;
     height: 70% !important;
    } 
+   .contact-icons {
+    flex-direction: column;
+    align-items: flex-start;
   }
+
+  .contact-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+  }
+
+  .contact-icon .contact-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .contact-icon .contact-link i {
+    margin-right: 10px;
+  }
+  .contact-handle {
+    font-size: 14px;
+  }
+  }
+  /* ------------Affects Some Tablets -------------- */
   @media only screen and (max-width: 1140px) and (min-width: 700px){
     .slideshow-container {
       width: 50%;
@@ -573,7 +599,9 @@ body.light-theme{
       height: 55%;
      
   }
-  
+  .condact_segtion {
+    padding-top: 5%;
+  }
   .main-content h2{
     font-size: 30px;
    }
@@ -581,24 +609,31 @@ body.light-theme{
    .main-content p{
     font-size: 15px;
    }
+   .contact-icons {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  @media only screen and (max-width: 450px) and (min-width: 350px) {
-  
-   .main-content h2{
+
+  .contact-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+  }
+
+  .contact-icon .contact-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .contact-icon .contact-link i {
+    margin-right: 10px;
+  }
+  .contact-handle {
     font-size: 13px;
-   }
-  
-   .main-content p{
-    font-size: 10px;
-   }
-  
-   .slideshow-container {
-    width: 50%;
-    height: 38%;
-   
   }
-  
   }
   
   @media only screen and (min-height: 350px) and (max-height: 450px) and (orientation: landscape) {
