@@ -450,14 +450,14 @@ body.light-theme{
   margin-top: 5px;
 }
 /* MEDIA QUARRIES FOR SMARTPHONES TABLETS AND COMPUTERS ----------------------- */
-
+/* ------ Affects Mobile -------------- */
 @media (max-width: 767px) {
     #about {
       background-attachment: scroll;
     }
   
   }
-  
+  /* ------ Affects Taablets -------------- */
   @media screen and (min-width: 1024px) {
     .menu{
         position: static;
@@ -472,7 +472,7 @@ body.light-theme{
         flex-direction: row;
     }
   }
-  
+  /* ------ Affects Mobile -------------- */
   @media only screen and (max-width: 600px) and (orientation: portrait) {
     
     .restaurant-link{
@@ -531,7 +531,8 @@ body.light-theme{
       width: 50%;
     }
   }
-  @media only screen and (min-height: 200px) and (max-height: 300px) and (orientation: landscape) {
+  /* ------ Affects Some phones on Landscape mode -------------- */
+  @media only screen and (max-height: 360px) and (orientation: landscape) {
     .events {
       height: 100%;
     }
@@ -558,7 +559,33 @@ body.light-theme{
     width: 50%;
     height: 70% !important;
    } 
+   .contact-icons {
+    flex-direction: column;
+    align-items: flex-start;
   }
+
+  .contact-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+  }
+
+  .contact-icon .contact-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .contact-icon .contact-link i {
+    margin-right: 10px;
+  }
+  .contact-handle {
+    font-size: 14px;
+  }
+  }
+  /* ------ Affects Tablets -------------- */
   @media only screen and (max-width: 1140px) and (min-width: 700px){
     .slideshow-container {
       width: 50%;
@@ -573,8 +600,33 @@ body.light-theme{
    .main-content p{
     font-size: 15px;
    }
+   .contact-icons {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
+  .contact-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+  }
+
+  .contact-icon .contact-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .contact-icon .contact-link i {
+    margin-right: 10px;
+  }
+  .contact-handle {
+    font-size: 15px;
+  }
+  }
+  /* ------ Affects Some Phones -------------- */
   @media only screen and (max-width: 699px) and (min-width: 601px){
     .slideshow-container {
       width: 50%;
@@ -590,7 +642,7 @@ body.light-theme{
     font-size: 15px;
    }
   }
-  
+  /* ------ Affects some phones -------------- */
   @media only screen and (max-width: 450px) and (min-width: 350px) {
   
    .main-content h2{
@@ -608,7 +660,7 @@ body.light-theme{
   }
   
   }
-  
+  /* ---------- Affects Most phones on landscape mode ------------- */
   @media only screen and (min-height: 350px) and (max-height: 450px) and (orientation: landscape) {
     .content h2 {
       font-size: 25px;
@@ -622,8 +674,33 @@ body.light-theme{
       height: 100%;
       width: 100%
     }
-  }
+    .contact-icons {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   
+    .contact-icon {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      
+    }
+  
+    .contact-icon .contact-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+    }
+  
+    .contact-icon .contact-link i {
+      margin-right: 10px;
+    }
+    .contact-handle {
+      font-size: 14px;
+    }
+  }
+  /* --------------Affects some phones ----------------- */
   @media only screen and (max-width: 349px) and (min-width: 279px) {
     #about{
       width: 100%;
@@ -647,6 +724,7 @@ body.light-theme{
    }
    
    }
+   /* --------------Affects some phones ----------------- */
    @media only screen and (max-width: 380px) and (min-width: 279px) and (orientation: portrait){
     .slideshow-container {
       width: 50%;
@@ -654,6 +732,7 @@ body.light-theme{
      
     }
    }
+   /* --------------Affects some phones ----------------- */
    @media only screen and (max-width: 500px) and (min-width: 380px) and (orientation: portrait){
     .slideshow-container {
       width: 50%;
@@ -661,6 +740,7 @@ body.light-theme{
      
     }
    }
+   /* --------------Affects some phones ----------------- */
    @media only screen and (max-width: 300px) and (orientation: portrait){
     #header {
       height: 70px; /* Adjust the height as desired */
@@ -671,6 +751,7 @@ body.light-theme{
       padding-bottom: 20%;
     }
    }
+   /* --------------Affects most phones contact section  ----------------- */
    @media only screen and (max-width: 480px) {
     .contact-icons {
       flex-direction: column;
@@ -695,6 +776,6 @@ body.light-theme{
       margin-right: 10px;
     }
     .contact-handle {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
