@@ -54,6 +54,8 @@ nav ul li a:hover::after{
 
 }
 .header-text{
+  font-weight: 800;
+  margin-top: 9%;
   font-size: 30px;
 }
 .header-text h1{
@@ -71,7 +73,7 @@ nav ul li a:hover::after{
   margin: 50px auto;
   width: fit-content;
   background-color: #205e43;
-  border: 1px solid gray;
+  border: 1px solid #fff;
   padding: 13px 50px;
   border-radius: 6px;
   text-decoration: none;
@@ -79,6 +81,25 @@ nav ul li a:hover::after{
   transition: background 0.5s;
 }
 .btn:hover{
+  border: 1px solid #205e43;
+  background: #d8d5d5;
+
+}
+.btn2{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  background-color: #f8f8f8;
+  border: 1px solid #fff;
+  padding: 13px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #205e43;
+  transition: background 0.5s;
+  font-weight: bold;
+}
+.btn2:hover{
+  border: 1px solid #fff;
   background: #d8d5d5;
 
 }
@@ -131,6 +152,20 @@ nav ul li a:hover::after{
 .card-text{
   font-size: 12px;
 }
+.services {
+  margin-top: 20px;
+  color: #fff;
+}
+.services ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.services li {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+
 /* ------------ Verification section ----------- */
 .color-section {
   display: flex;
@@ -324,7 +359,7 @@ nav ul li a:hover::after{
 }
 .contact-section .contact-info .box .text h3{
   font-weight: 500;
-  color: #205e43;
+  color: #fff;
 }
 .contact-form{
   width: 40%;
@@ -380,10 +415,20 @@ nav ul li a:hover::after{
   font-size: 18px;
 
 }
+.contact-form .inputbox input[type="submit"]{
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+
+}
 .copyright{
   width: 100%;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   background: #205e43;
   font-weight: 300;
   color: #fff;
@@ -391,7 +436,21 @@ nav ul li a:hover::after{
 .copyright i{
   color: #00bcd4;
 }
-
+.social-icons{
+  margin-top: 30px;
+}
+.social-icons a{
+  text-decoration: none;
+  padding-left: 15px;
+  font-size: 30px;
+  color: #fff;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover{
+  color: #00bcd4;
+  transform: translateY(-5px);
+}
 /* -----------MEDIA QUARRIES --------------- */
 nav .fas{
   display: none;
@@ -444,6 +503,9 @@ nav .fas{
     display: block;
     font-size: 25px;
 }
+#right-paragraph{
+  font-size: 14px;
+}
 nav ul{
     background: #f8f8f8;
     position: fixed;
@@ -465,5 +527,53 @@ nav ul .fas{
     left: 25px;
     cursor: pointer;
 }
+#left-paragraph{
+  font-size: 22px;
+}
+.container h2{
+  font-size: 26px !important;
+}
+.container p{
+  font-size: 14px !important;
+}
+.container h1{
+  font-size: 45px !important;
+}
+.services li {
+  font-size: 13px;
+}
+.contact .content p{
+  font-weight: 300;
+  color: #fff;
+  font-size: 13px;
+}
+}
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* CSS rules specific to tablets go here */
+  nav .fas{
+    display: block;
+    font-size: 25px;
+}
+nav ul{
+    background: #f8f8f8;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+nav ul li{
+    display: block;
+    margin: 25px;
+}
+nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
 }
