@@ -588,4 +588,26 @@ nav ul .fas{
     left: 25px;
     cursor: pointer;
 }
+.owl-nav{
+  display: none;
 }
+
+}
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+  /* CSS styles for phones in landscape mode */
+  /* Place your styles here */
+  .header-text{
+    padding-bottom: 2%;
+  }
+  #header{
+    width: 100%;
+    height: 100%;
+  }
+  #About-font2{
+    font-size: 26px !important;
+  }
+  #About-font3{
+    font-size: 36px !important;
+  }
+}
+
