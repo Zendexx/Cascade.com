@@ -63,10 +63,17 @@ nav ul li a:hover::after{
 }
 .header-text h1 span{
   color: #ff004f;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Playfair Display', serif;
 }
 .header-text{
   text-align: center;
+  font-size: 32px;
+}
+#About-font2{
+  font-family: 'Playfair Display', serif;
+}
+#About-font3{
+  font-family: 'Playfair Display', serif;
 }
 .btn{
   display: block;
@@ -494,10 +501,9 @@ nav .fas{
   }
   .header-text{
     margin-top: 35%;
-    font-size: 16px;
 }
-.header-text h1{
-    font-size: 30px;
+.title{
+  font-size: 30px;
 }
 nav .fas{
     display: block;
@@ -546,6 +552,12 @@ nav ul .fas{
   font-weight: 300;
   color: #fff;
   font-size: 13px;
+}
+#About-font2{
+  font-size: 26px !important;
+}
+#About-font3{
+  font-size: 36px !important;
 }
 }
 
