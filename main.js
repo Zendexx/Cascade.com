@@ -1,48 +1,26 @@
-// Slideshow
-let slideIndex = 1;
-showSlides(slideIndex);
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname)
+{
+    for(tablink of tablinks)
+    {
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents)
+    {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab")
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+
 }
 
-function showSlides(n) {
-  const slides = document.getElementsByClassName("slide");
-  if (n > slides.length) {
-      slideIndex = 1;
-  }
-  if (n < 1) {
-      slideIndex = slides.length;
-  }
-  for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  slides[slideIndex - 1].style.display = "block";
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
 }
-
-// Automated scrolling
-function automateScrolling() {
-  const slides = document.querySelectorAll('.product-slide');
-  const interval = 2000; // Set the interval time in milliseconds (e.g., 2000ms = 2 seconds)
-  let currentSlide = 0;
-
-  function showSlide(index) {
-      slides.forEach((slide) => {
-          slide.style.display = 'none';
-      });
-
-      slides[index].style.display = 'block';
-  }
-
-  function nextSlide() {
-      currentSlide++;
-      if (currentSlide >= slides.length) {
-          currentSlide = 0;
-      }
-      showSlide(currentSlide);
-  }
-
-  setInterval(nextSlide, interval);
+function closemenu(){
+    sidemenu.style.right = "-200px";
 }
-
-document.addEventListener('DOMContentLoaded', automateScrolling);
