@@ -55,7 +55,7 @@ nav ul li a:hover::after{
 }
 .header-text{
   font-weight: 800;
-  margin-top: 9%;
+  margin-top: 23%;
   font-size: 30px;
 }
 .header-text h1{
@@ -117,20 +117,21 @@ nav ul li a:hover::after{
 }
 .green-line {
     border: none;
-    width: 45%;
-    padding-left: 15%;
+    width: 40%;
+    margin-left: 30%;
     border-top: 6px solid #205e43;
   }
 #left-paragraph{
   font-size: 35px;
   font-weight: 80%;
-  padding-left: 15%;
+  text-align: center;
 }
 #right-paragraph{
   font-size: 20px;
   font-weight: 80%;
-  padding-left: 35%;
-  padding-right: 15%;
+  padding-left: 30%;
+  padding-right: 30%;
+  text-align: center; 
 }
 #tricky-section {
   background-color: #205e43;
